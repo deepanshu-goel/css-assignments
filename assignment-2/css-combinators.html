@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style only the direct children of the div element */
+      div > p {
+        color: blue;
+      }
+
+      /* Style only the next element that follows the h2 element */
+      h2 + p {
+        color: green;
+      }
+
+      /* Style all elements that are siblings of the h3 element */
+      h3 ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>This is a blue paragraph.</p>
+      <div>
+        <p>This is not a blue paragraph.</p>
+      </div>
+    </div>
+    <h2>This is a heading</h2>
+    <p>This is a green paragraph.</p>
+    <p>This is not a green paragraph.</p>
+    <h3>This is another heading</h3>
+    <p>This is a red paragraph.</p>
+    <p>This is also a red paragraph.</p>
+  </body>
+</html>
